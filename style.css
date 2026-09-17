@@ -1,0 +1,82 @@
+/* Base Styles */
+body {
+    background-color: rgb(243, 169, 180);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Footer-a bottom-la unique positions-la vaikka */
+}
+
+form {
+    text-align: center;
+}
+
+/* --- Header Layout (Logo Left, Links Right Side-la Mela Alignment) --- */
+.site-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Brand-a left-liyum, Links-a right-liyum split pannum */
+    padding: 10px 30px; 
+}
+
+/* Logo and Text Wrapper */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.one {
+    margin: 0;
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* --- Navigation Links Styling --- */
+.nav-links {
+    display: flex;
+    gap: 25px; /* Links-ku naduvula scaling gap */
+}
+
+.nav-links a {
+    text-decoration: none; /* Underline-a completely remove panniyachu */
+    color: #000000;        /* Default blue color-a neat black-ah maathiyachu */
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #ffffff;        /* Mouse cursor mela pogum pothu white color-ah maarum */
+}
+
+/* --- Border Lines --- */
+.line-break {
+    border: none;
+    border-top: 1px solid black;
+    margin: 0;
+}
+
+/* --- Main Content Area --- */
+.content-area {
+    flex: 1; /* Main space-a eduthu footer-a automatic-ah screen bottom-ku push pannum */
+    padding: 20px;
+}
+
+/* --- Footer Styles --- */
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+
