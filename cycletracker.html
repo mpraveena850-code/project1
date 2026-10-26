@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEM TRACK</title>
+    <link rel="icon" href="img.html/logo.jpg">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand-container">
+            <img src="img.html/logo.jpg" alt="Fem Track Logo" class="logo-img">
+            <h1 class="one">Fem Track</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index..html">Home</a>
+            <a href="cycletracker.html">Cycle Tracker</a>
+            <a href="phase.html">Phase of Cycle</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h2>Cycle Tracker</h2>
+            <div class="form-group">
+                <label for="lastDate">When did your last period start?</label>
+                <input type="date" id="lastDate">
+            </div>
+            <div class="form-group">
+                <label for="cycleLength">Average cycle length (days):</label>
+                <input type="number" id="cycleLength" value="28" min="21" max="45">
+            </div>
+            <div class="form-group">
+                <label for="periodLength">Period duration (days of bleeding):</label>
+                <input type="number" id="periodLength" value="5" min="2" max="10">
+            </div>
+            <button class="track-btn" onclick="calculateCycle()">Track & Predict</button>
+
+            <div class="results" id="resultsBox">
+                <!-- Added 'phase-clickable-card' class here so both elements style up as interactive items -->
+                <div class="result-card alert-card phase-clickable-card" id="statusCard" style="display: none;">
+                    <h3 id="statusTitle">Cycle Alert</h3>
+                    <p id="statusValue">Regular</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Predicted Next Period</h3>
+                    <p id="nextPeriodDate">-</p>
+                </div>
+                
+                <div class="result-card phase-clickable-card" id="clickablePhaseCard">
+                    <h3>Current Cycle Stage (Click to learn more) 🔗</h3>
+                    <p id="currentPhase">-</p>
+                    <p id="phaseDescription" class="phase-info"></p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <center>
+    <h1 style="color: #d81b60; border-bottom: 2px solid #f48fb1; padding-bottom: 10px; font-family: Arial, sans-serif;">Benefits of Using a Cycle Tracker</h1>
+            </center>
+    <p style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; font-size: 1.1em;">Using a cycle tracker acts like a <span style="font-weight: bold; color: #ad1457;">personalized dashboard for your body</span>, letting you predict your period, manage mood swings, plan or avoid pregnancy, and take control of your reproductive health.</p>
+
+    <h2 style="color: #ad1457; margin-top: 25px; font-family: Arial, sans-serif;">🕒 Predictability and Convenience</h2>
+    <ul style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; list-style-type: square; padding-left: 20px;">
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">No surprises:</strong> You will know exactly when to carry period products so you are never caught off guard.</li>
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Smart planning:</strong> You can schedule vacations, beach trips, or big work events around your high-energy days and avoid your heaviest flow days.</li>
+    </ul>
+
+    <h2 style="color: #ad1457; margin-top: 25px; font-family: Arial, sans-serif;">🧘‍♀️ Better Mood and Symptom Control</h2>
+    <ul style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; list-style-type: square; padding-left: 20px;">
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Spotting patterns:</strong> You can connect the dots between your calendar and your body, recognizing that a sudden spike in anxiety or low energy is just a predictable part of your luteal phase (PMS).</li>
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Proactive relief:</strong> If you know cramps or migraines hit on day 26, you can start lifestyle tweaks or pain management ahead of time rather than reacting after the pain starts.</li>
+    </ul>
+
+    <h2 style="color: #ad1457; margin-top: 25px; font-family: Arial, sans-serif;">👶 Fertility and Family Planning</h2>
+    <ul style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; list-style-type: square; padding-left: 20px;">
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Catching ovulation:</strong> Trackers estimate your "fertile window," telling you exactly which days you are most likely to conceive if you are trying for a baby.</li>
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Body awareness:</strong> By logging metrics like basal body temperature or cervical mucus, you get a clearer picture of your natural biological rhythms.</li>
+    </ul>
+
+    <h2 style="color: #ad1457; margin-top: 25px; font-family: Arial, sans-serif;">🩺 Early Warning System for Health</h2>
+    <ul style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; list-style-type: square; padding-left: 20px;">
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Flagging irregularities:</strong> Your cycle is a vital sign. A tracker immediately highlights if your periods are consistently late, unusually short, or skipped entirely.</li>
+        <li style="margin-bottom: 10px;"><strong style="color: #000;">Empowered doctor visits:</strong> Instead of guessing "I think my last period was a few weeks ago," you can hand your gynecologist accurate, months-long data. This helps speed up the diagnosis for conditions like PCOS, thyroid issues, or endometriosis.</li>
+    </ul>
+</div>
+
+    </main>
+
+    <script src="script.js"></script>
+     <footer class="site-footer">
+        <p>&copy; 2026 Fem Track. All rights reserved.</p>
+    </footer>
+</body>
+</html>

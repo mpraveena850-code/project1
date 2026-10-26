@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(248, 238, 240);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+form {
+    text-align: center;
+}
+
+.site-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 30px; 
+    background-color: #fca9cec4;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.one {
+    margin: 0;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #000000;        
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;        
+}
+
+.content-area {
+    flex: 1; 
+}
+
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #333333;
+    background-color: rgba(235, 83, 151, 0.1);
+    margin-top: auto;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    gap: 40px;               
+    padding: 20px;
+    flex-wrap: nowrap;       
+    margin-top: 120px;       
+    width: 100%;             
+}
+
+.hero-item {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    text-decoration: none;  
+    transition: transform 0.3s ease;
+}
+
+.hero-item:hover {
+    transform: translateY(-5px);
+}
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;       
+    border-radius: 20px;     
+    display: block; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    transition: box-shadow 0.3s ease;
+}
+
+.hero-item:hover .hero-img {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+    margin-top: 15px;       
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.15rem;      
+    font-weight: 600;       
+    color: #4A154B;         
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.hero-item:hover .hero-text {
+    color: #E91E63;         
+}
